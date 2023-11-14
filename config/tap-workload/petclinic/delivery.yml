@@ -19,7 +19,7 @@ spec:
   template:
     metadata:
       annotations:
-        apps.tanzu.vmware.com/correlationid: https://gitlab.infra.tap-scott-z576dnxmd53t.ts-cto.com/root/spring-petclinic?sub_path=/
+        apps.tanzu.vmware.com/correlationid: https://github.com/vrabbi/spring-petclinic?sub_path=/
         autoscaling.knative.dev/minScale: "1"
         boot.spring.io/actuator: http://:8081/actuator
         boot.spring.io/version: 3.0.0
