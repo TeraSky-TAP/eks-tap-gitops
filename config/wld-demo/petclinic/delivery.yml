@@ -48,6 +48,8 @@ spec:
     spec:
       containers:
       - env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: postgres
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
         image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/petclinic-wld-demo@sha256:e1f760d580314b8eed239b6cdbc9be388e1c46a9e8415f7163500dd7a8bd70a9
