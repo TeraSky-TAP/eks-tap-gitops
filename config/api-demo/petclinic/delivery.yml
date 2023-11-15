@@ -56,7 +56,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/petclinic-api-demo@sha256:4e33cdf132ac922eb5693253f7627ce6f7a8b1a5f689ba75cad03b5f1e6ac3b5
+        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/petclinic-api-demo@sha256:5196ecf8628521599de98e90aa4af45b7366973d7da1675efa867f9be04a8658
         livenessProbe:
           httpGet:
             path: /livez
