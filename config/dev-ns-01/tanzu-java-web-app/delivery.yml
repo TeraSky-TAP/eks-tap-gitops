@@ -38,7 +38,7 @@ spec:
           spring-boot-convention/app-live-view-appflavour-check
           spring-boot-convention/app-live-view-connector-boot
           spring-boot-convention/app-live-view-appflavours-boot
-        developer.apps.tanzu.vmware.com/image-source-digest: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-lsp:dev-ns-01-tanzu-java-web-app@sha256:eb0976ab2bee5abef95c69b135c808f0ab1c4afeb9f8c208856329148b7684f1
+        developer.apps.tanzu.vmware.com/image-source-digest: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-lsp:dev-ns-01-tanzu-java-web-app@sha256:192afaf1803af65e2874b1c75af6ebe66d71e69be5473bbf48d6c80ec23a0382
         developer.conventions/target-containers: workload
         local-source-proxy.apps.tanzu.vmware.com: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-lsp:dev-ns-01-tanzu-java-web-app@sha256:fcac6452941e4257ae5893b171239582d9895fd8947ba6b1f208b01901d94cd6
       labels:
@@ -63,7 +63,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/tanzu-java-web-app-dev-ns-01@sha256:32db71f938cea101ebeb45e0c9b87426427ff88b0a1b71ca5794fd67e9ee08b9
+        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/tanzu-java-web-app-dev-ns-01@sha256:1b3f5f553343dd2ddf18a323b737ac0f66235a3417ede1ad2f565219061527f0
         livenessProbe:
           httpGet:
             path: /livez
