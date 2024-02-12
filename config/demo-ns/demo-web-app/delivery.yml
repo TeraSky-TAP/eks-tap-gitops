@@ -8,7 +8,6 @@ metadata:
     kapp.k14s.io/change-rule: upsert after upserting servicebinding.io/ServiceBindings
   labels:
     app.kubernetes.io/part-of: demo-web-app
-    apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/component: run
     carto.run/workload-name: demo-web-app
@@ -33,7 +32,6 @@ spec:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: demo-web-app
         apps.tanzu.vmware.com/auto-configure-actuators: "false"
-        apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: demo-web-app
         conventions.carto.run/framework: spring-boot
@@ -47,7 +45,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/demo-web-app-demo-ns@sha256:939ef2974945323dae2b1404a2ff4c6c92346a2fea2cabc8136202a9cce8072f
+        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/demo-web-app-demo-ns@sha256:595fce89af66f32ec259a31ae190863046c20ba4c42491cc4598453f97acc281
         name: workload
         ports:
         - containerPort: 8080
