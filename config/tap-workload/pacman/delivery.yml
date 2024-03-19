@@ -37,7 +37,7 @@ spec:
         carto.run/workload-name: pacman
     spec:
       containers:
-      - image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/pacman-tap-workload@sha256:74c3b77c04d7ab92455bd2ea09cd1d05d833c6a5fbaed66e1aa19b8108fe8dce
+      - image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/pacman-tap-workload@sha256:ec03b3422dc3c8ea6935a5a86a1a71c06cfba21feecc3207649e6cb6e9cfc6ea
         name: workload
         resources: {}
         securityContext:
