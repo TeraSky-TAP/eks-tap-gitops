@@ -56,7 +56,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/demo-app-tap-workload@sha256:cc343acc9257f6041a3d9f361ad0bc5967a6638c6935882cf0877bf231936670
+        image: 666639454963.dkr.ecr.us-east-1.amazonaws.com/z576dnxmd53t/tap-supply-chain/demo-app-tap-workload@sha256:07b8d8a00de927a734cc027cc97572b940749ae91856bbca1cf5f46266857cd4
         name: workload
         ports:
         - containerPort: 8080
